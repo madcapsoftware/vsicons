@@ -1,0 +1,41 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="description" content="vsicons is a searchable catalog for icons and other types of UX image assets used in Visual Studio product family. The database and the web app are developed by @chryw.")
+    meta(name="keywords" content="icon, Visual Studio, code, developer, IDE, catalog, search, library, UX, image")
+    meta(name="author" content="Cherry Wang")
+    meta(name="robots" content="index, follow")
+    meta(name="revisit-after" content="3 days")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Visual Studio Icons and Illustrations
+    link(rel="stylesheet" type="text/css" href="css/lib.min.css?v=@@hashLibCSS")
+    link(rel="stylesheet" type="text/css" href="css/main.min.css?v=@@hashMainCSS")
+  body
+    div.main.ms-font-m.ms-bgColor-white.ms-fontColor-black
+      header.header.ms-bgColor-neutralDark.ms-fontColor-white
+        div.ms-Grid
+          div.ms-Grid-row
+            div.ms-Grid-col.ms-u-xl6.ms-u-xlPush3
+              h1 Visual Studio Icons and Illustrations
+              p The icons and illustrations are created for Visual Studio, Visual Studio Team Services, Visual Studio Code and more. The assets are tagged with varies metadata. Try searching by name, category, concept, shape and more. Example: "database", "version control","triangle", "azure", etc. Click the thumbnail to learn more details and get download links.
+      div.main.ms-bgColor-neutralLighter.ms-fontColor-black
+        div.ms-Grid
+          div.ms-Grid-row
+            div.ms-Grid-col.ms-u-xl2.ms-u-xlPush3
+              div#rcSearch
+          div.ms-Grid-row
+            div.ms-Grid-col.ms-u-xl6.ms-u-xlPush3
+              div#rcGallery
+      footer.footer.ms-bgColor-neutralDark.ms-fontColor-white
+        div.ms-Grid
+          div.ms-Grid-row
+            div.ms-Grid-col.ms-u-xl6.ms-u-xlPush3
+              p.text-muted NOTE: The thumbnails and download links only cover the most common size and file format. Most icons have a lot of variations for different needs. Please contact&nbsp;
+                a(href="mailto:vsicons@microsoft.com").ms-fontColor-themePrimary vsicons@microsoft.com
+                | &nbsp;for additional formats. To request new icons, please log an&nbsp;
+                a(href="http://aka.ms/dduxicon").ms-fontColor-themePrimary Icon Request Design Task
+                | . To request new illustrations, please log an&nbsp;
+                a(href="http://aka.ms/dduxillu").ms-fontColor-themePrimary Illustration Request Design Task
+                | .
+    script(src="js/main.min.js?v=@@hashMainJS")
