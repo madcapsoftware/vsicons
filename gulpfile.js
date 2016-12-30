@@ -93,5 +93,5 @@ gulp.task('watch', ['copy', 'css', 'js', 'cachebust'], () => {
     gulp.watch('src/**/*.html', ['copy']).on('change', browserSync.reload);
 });
 
-
-gulp.task('default', ['watch']);
+gulp.task('build',['copy', 'css', 'js', 'cachebust']);
+gulp.task('default', ['build']);
