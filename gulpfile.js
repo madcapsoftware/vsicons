@@ -7,7 +7,6 @@ const gulp = require('gulp'),
     replace = require('gulp-replace'),
     babel = require('gulp-babel'),
     sass = require('gulp-sass'),
-    pug = require('gulp-pug'),
     imagemin = require('gulp-imagemin'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
@@ -19,15 +18,6 @@ const gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     browserSync = require('browser-sync').create();
 
-// compile pug to html
-gulp.task('pug', () => {
-    return gulp.src('src/_pug/*.pug')
-        .pipe(pug({
-            'pretty': true,
-            'doctype': 'html'
-        }))
-        .pipe(gulp.dest('dist'));
-});
 
 // compile and bundle css
 gulp.task('css', () => {
@@ -53,11 +43,11 @@ gulp.task('css', () => {
 });
 
 // compile and bundle js
-gulp.task('js', ['data'], () => {
+gulp.task('js', ['copy'], () => {
 
     let main = browserify('src/_js/main.js')
-        .transform("babelify", {
-            presets: ["es2015", "react"]
+        .transform('babelify', {
+            presets: ['es2015', 'react']
         })
         .bundle()
         .pipe(source('main.js'))
@@ -70,9 +60,15 @@ gulp.task('js', ['data'], () => {
     return merge(main);
 });
 
-gulp.task('data', () => {
-    return gulp.src('src/data/*.json')
+// copy static assets
+gulp.task('copy', () => {
+    let json = gulp.src('src/assets/*.json')
         .pipe(gulp.dest('dist'));
+    let images = gulp.src('src/assets/*.{png,svg}')
+        .pipe(gulp.dest('dist/images'));
+    let html = gulp.src('src/*.html')
+        .pipe(gulp.dest('dist'));
+    return merge(json, images, html);
 });
 
 // clean dist
@@ -80,22 +76,22 @@ gulp.task('clean', () => {
     return del('dist');
 });
 
-gulp.task('cachebust', ['pug'], () => {
-    return gulp.src('dist/index.html')
-        .pipe(replace('@@hashLibCSS', hasha('dist/css/lib.min.css')))
-        .pipe(replace('@@hashMainCSS', hasha('dist/css/main.min.css')))
-        .pipe(replace('@@hashMainJS', hasha('dist/js/main.min.js')))
+// cachebust
+gulp.task('cachebust', ['copy', 'css', 'js'], () => {
+    gulp.src(['src/**/*.html'])
+        .pipe(replace('@@hash-main-css', hasha.fromFileSync('dist/css/main.min.css')))
+        .pipe(replace('@@hash-main-js', hasha.fromFileSync('dist/js/main.min.js')))
         .pipe(gulp.dest('dist'));
-})
-
-gulp.task('watch', ['data','css','js','pug','cachebust'], () => {
-    browserSync.init({
-        server: "./dist"
-    });
-    gulp.watch("src/**/*.scss", ['css']);
-    gulp.watch("src/**/*.js", ['js']);
-    gulp.watch("src/**/*.(pug|html)", ['pug']);
-    gulp.watch("src/**/*.json");
 });
+
+gulp.task('watch', ['copy', 'css', 'js', 'cachebust'], () => {
+    browserSync.init({
+        server: './dist'
+    });
+    gulp.watch('src/**/*.scss', ['css']).on('change', browserSync.reload);
+    gulp.watch('src/**/*.js', ['js']).on('change', browserSync.reload);
+    gulp.watch('src/**/*.html', ['copy']).on('change', browserSync.reload);
+});
+
 
 gulp.task('default', ['watch']);

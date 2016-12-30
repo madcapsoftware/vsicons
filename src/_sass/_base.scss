@@ -8,31 +8,15 @@ body {
   margin: 0;
   padding: 0;
 }
-.main {
-  padding: 2em 0;
-}
-.gallery {
-  font-size: 0;
-  padding: 0;
-  margin: auto 0;
-  width: 100%;
+
+.vsil-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.gallery-item {
-  font-size: initial;
-  display: inline-block;
-  position: relative;
-  width: 5%;
-  height: 32px;
-  &:hover, &:focus {
-    cursor: pointer;
-    background-color: #b3d6f2;
+.vsil-header {
+  margin-bottom: 32px;
+  p {
+    margin: 0;
   }
-}
-
-.center-both {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

@@ -1,0 +1,21 @@
+
+.vsil-show-on-print {
+  display: none;
+}
+@media print {
+  body {
+    font-size: 12px;
+  }
+  .vsil-printable {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+  }
+  .vsil-hide-on-print {
+    display: none;
+  }
+  .vsil-show-on-print {
+    display: initial;
+  }
+}

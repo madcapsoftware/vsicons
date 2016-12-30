@@ -1,7 +1,9 @@
 // shared
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'misc.scss';
+@import 'variables';
+@import 'mixins';
+@import 'misc';
 
 // layout
-@import 'base.scss';
+@import 'base';
+@import 'gallery';
+@import 'print';
