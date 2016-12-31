@@ -68,7 +68,9 @@ gulp.task('copy', () => {
         .pipe(gulp.dest('dist/images'));
     let html = gulp.src('src/*.html')
         .pipe(gulp.dest('dist'));
-    return merge(json, images, html);
+    let webconfig = gulp.src('src/Web.config')
+        .pipe(gulp.dest('dist'));
+    return merge(json, images, html, webconfig);
 });
 
 // clean dist
