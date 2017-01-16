@@ -18,10 +18,9 @@ const gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     browserSync = require('browser-sync').create();
 
-
 // compile and bundle css
 gulp.task('css', () => {
-    let lib = gulp.src(['node_modules/office-ui-fabric-core/dist/css/fabric.min.css'])
+    let lib = gulp.src(['node_modules/office-ui-fabric-react/dist/css/fabric.min.css'])
         .pipe(concat('lib.css'))
         .pipe(cleancss())
         .pipe(rename({
@@ -45,7 +44,7 @@ gulp.task('css', () => {
 // compile and bundle js
 gulp.task('js', ['copy'], () => {
 
-    let main = browserify('src/_js/main.js')
+    let main = browserify('src/_js/main.jsx')
         .transform('babelify', {
             presets: ['es2015', 'react']
         })
@@ -91,7 +90,7 @@ gulp.task('watch', ['copy', 'css', 'js', 'cachebust'], () => {
         server: './dist'
     });
     gulp.watch('src/**/*.scss', ['css']).on('change', browserSync.reload);
-    gulp.watch('src/**/*.js', ['js']).on('change', browserSync.reload);
+    gulp.watch('src/**/*.jsx', ['js']).on('change', browserSync.reload);
     gulp.watch('src/**/*.html', ['copy']).on('change', browserSync.reload);
 });
 
