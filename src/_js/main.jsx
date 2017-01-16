@@ -48,7 +48,7 @@ VsilSearch.propTypes = {
 
 ReactDOM.render(<VsilSearch target="VsilGallery" />, document.getElementById('VsilSearch'));
 
-class VsilGallery extends React.Component {
+export class VsilGallery extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -70,6 +70,7 @@ class VsilGallery extends React.Component {
         if (item.publish === 1) {
           dataFiltered.push(item);
         }
+        return dataFiltered;
       });
       return dataFiltered;
     };

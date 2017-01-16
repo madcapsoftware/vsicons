@@ -40,13 +40,12 @@
         "gutil": "^1.6.4",
         "hasha": "^2.2.0",
         "merge-stream": "^1.0.1",
-        "npm": "^4.0.5",
         "reactify": "^1.1.1",
-        "vinyl-source-stream": "^1.1.0"
+        "vinyl-source-stream": "^1.1.0",
+        "babel-preset-react": "^6.16.0",
+        "babelify": "^7.3.0"
     },
     "dependencies": {
-        "babel-preset-react": "^6.16.0",
-        "babelify": "^7.3.0",
         "office-ui-fabric-react": "^0.82.2",
         "react": "^15.4.1",
         "react-dom": "^15.4.1",
