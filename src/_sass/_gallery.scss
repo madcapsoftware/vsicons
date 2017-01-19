@@ -1,36 +1,28 @@
 .vsil-gallery {
     border-collapse: collapse;
     width: 100%;
+
     td,
     th {
         text-align: left;
     }
 
     thead {
-      display: table-header-group;
+        display: table-header-group;
+
         th {
-          &:not(:first-child) {
-            border-left: 2px solid #fff;
-          }
+            &:not(:first-child) {
+                border-left: 2px solid #fff;
+            }
         }
     }
 
     tbody {
-        td {
+        tr {
             border-bottom: 1px solid #000;
-            word-wrap: break-word;
-            overflow: hidden;
-            &>span {
-              display: table-cell;
-              vertical-align: middle;
-              height: 48px;
-            }
+            display: block;
+            padding-top: 8px;
+            padding-bottom: 8px;
         }
     }
-}
-.vsil-gallery-thumbnail {
-  img {
-    width: 32px;
-    height: auto;
-  }
 }

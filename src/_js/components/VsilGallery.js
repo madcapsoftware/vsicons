@@ -51,7 +51,7 @@ export default class VsilGallery extends React.Component {
           <tr className="ms-bgColor-neutralSecondary ms-fontColor-white ms-Grid-row">
             <th className="ms-Grid-col ms-u-sm9 ms-u-md4"><span>Name</span></th>
             <th className="ms-Grid-col ms-u-sm3 ms-u-md2"><span>Icon</span></th>
-            <th className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6"><span>Keywords</span></th>
+            <th className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6"><span>Description</span></th>
           </tr>
         </thead>
         <tbody className="ms-Grid">
@@ -59,9 +59,9 @@ export default class VsilGallery extends React.Component {
             this.state.items.map((item) => {
               return (
                 <tr className="ms-Grid-row vsil-gallery-item" id={`Item_${item.id}`}>
-                  <td className="ms-Grid-col ms-u-sm9 ms-u-md4"><span className="vsil-gallery-item-name">{item.name}</span></td>
-                  <td className="ms-Grid-col ms-u-sm3 ms-u-md2 vsil-gallery-thumbnail"><span><Image src={`${this.props.prefix}${item.name}/${item.name}${this.props.suffix}`} alt={` ${item.name} `} /></span></td>
-                  <td className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6"><span className="vsil-gallery-item-keywords">{item.keywords ? item.keywords.join(', ') : ''}</span></td>
+                  <td className="ms-Grid-col ms-u-sm9 ms-u-md4 vsil-gallery-item-name"><span>{item.name}</span></td>
+                  <td className="ms-Grid-col ms-u-sm3 ms-u-md2 vsil-gallery-thumbnail"><span><Image src={`${this.props.prefix}${item.name}/${item.name}${this.props.suffix}`} alt={` ${item.name} `} width={32} /></span></td>
+                  <td className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6 vsil-gallery-item-description"><span>{item.description || ''}</span></td>
                 </tr>
               );
             })

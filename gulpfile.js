@@ -37,7 +37,7 @@ gulp.task('css', () => {
   return merge(lib, main);
 });
 
-// compile and bundle js
+// compile and bundle jsdfe
 gulp.task('js', ['copy'], () => {
   const main = browserify('src/_js/main.js')
       .transform('babelify', {
