@@ -1,12 +1,24 @@
+.vsil-gallery {
+  .ms-Grid-row {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .vsil-gallery-header {
   height: 2em;
 }
 
 .vsil-gallery-item {
   border-bottom: 1px solid #000;
-  height: 4em;
 
   &>div {
-    display: inline-block;
+    display: table;
+    min-height: 3em;
+
+    &>span {
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 }

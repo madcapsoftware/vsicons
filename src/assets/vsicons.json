@@ -1,4 +1,4 @@
-{"id":1,"name":"1x","category":"Single","product":["VSIDE"],"keywords":["Scale","Number"],"description":"100% scale","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
+[{"id":1,"name":"1x","category":"Single","product":["VSIDE"],"keywords":["Scale","Number"],"description":"100% scale","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":2,"name":"2Columns","category":"Single","product":["VSIDE"],"keywords":["Column","Layout","Screen","Rectangle"],"description":"Used for setting layout.","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":3,"name":"2ColumnsLeftSplit","category":"Single","product":["VSIDE"],"keywords":["Column","Layout","Screen","Rectangle"],"description":"Used for setting layout.","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4,"name":"2ColumnsRightSplit","category":"Single","product":["VSIDE"],"keywords":["Column","Layout","Screen","Rectangle"],"description":"Used for setting layout.","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
@@ -4312,3 +4312,4 @@
 {"id":4333,"name":"Input","category":"Single","product":["VSIDE"],"keywords":["Input","Arrow","Box"],"description":"Often used together with Output.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1},
 {"id":4334,"name":"Vertices","category":"Single","product":["VSIDE"],"keywords":["Vertex","Vertices","Data","Fragment","Dot","Pixel","Square"],"description":"Used in SQL Job Graph to represent processed vertex count.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1},
 {"id":4335,"name":"RowUpdating","category":"Combo","product":["VSIDE"],"keywords":["Row","Update","Write","Line","Pencil","Edit"],"description":"Used in SQL Job Graph to represent updated row count.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1}
+]
