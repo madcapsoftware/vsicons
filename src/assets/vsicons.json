@@ -1,4 +1,4 @@
-[{"id":1,"name":"1x","category":"Single","product":["VSIDE"],"keywords":["Scale","Number"],"description":"100% scale","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
+{"id":1,"name":"1x","category":"Single","product":["VSIDE"],"keywords":["Scale","Number"],"description":"100% scale","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":2,"name":"2Columns","category":"Single","product":["VSIDE"],"keywords":["Column","Layout","Screen","Rectangle"],"description":"Used for setting layout.","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":3,"name":"2ColumnsLeftSplit","category":"Single","product":["VSIDE"],"keywords":["Column","Layout","Screen","Rectangle"],"description":"Used for setting layout.","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4,"name":"2ColumnsRightSplit","category":"Single","product":["VSIDE"],"keywords":["Column","Layout","Screen","Rectangle"],"description":"Used for setting layout.","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
@@ -1871,7 +1871,7 @@
 {"id":1880,"name":"InkCanvasControl","product":["VSIDE"],"keywords":["Ink","Pencil","Canvas","Draw","Control"],"productversion":"Rectangle","msdnversion":2014,"publish":1},
 {"id":1881,"name":"InkPresenter","product":["VSIDE"],"keywords":["Ink","Screen","Presenter","Canvas","Stroke"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1882,"name":"Inline","product":["VSIDE"],"keywords":["Text","Inline","Page","Line","File"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
-{"id":1883,"name":"Input","product":["VSIDE"],"keywords":["Input","Chevron","Arrow"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
+{"id":1883,"name":"InputChevron","product":["VSIDE"],"keywords":["Input","Chevron","Arrow"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1884,"name":"InputHidden","category":"Status","product":["VSIDE"],"keywords":["Input","Dotted","Line","Hidden","Text","Box","Letter"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1885,"name":"InputOutput","product":["VSIDE"],"keywords":["Input","Arrow","Output","IO","Left","Right","Access"],"productversion":"Visual Studio 2015","msdnversion":2014,"publish":1},
 {"id":1886,"name":"InputParameter","product":["VSIDE"],"keywords":["Input","Arrow","Parameter","Attribute","Down","@"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
@@ -4308,5 +4308,7 @@
 {"id":4329,"name":"BrandVisualStudioInstaller2017RTW","category":"Brand","product":["Desktop"],"publish":0},
 {"id":4330,"name":"BrandVisualStudioBlend2017RC","category":"Brand","product":["Desktop"],"publish":0},
 {"id":4331,"name":"BrandVisualStudioBlend2017RTW","category":"Brand","product":["Desktop"],"publish":0},
-{"id":4332,"name":"StepBack","category":"Action","product":["VSIDE"],"keywords":["Step","Back","Debug","intelliTrace","Arrow","Backwards"],"description":"Used in intelliTrace debugging for stepping a back to previous line.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1}
-]
+{"id":4332,"name":"StepBack","category":"Action","product":["VSIDE"],"keywords":["Step","Back","Debug","intelliTrace","Arrow","Backwards"],"description":"Used in intelliTrace debugging for stepping a back to previous line.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1},
+{"id":4333,"name":"Input","category":"Single","product":["VSIDE"],"keywords":["Input","Arrow","Box"],"description":"Often used together with Output.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1},
+{"id":4334,"name":"Vertices","category":"Single","product":["VSIDE"],"keywords":["Vertex","Vertices","Data","Fragment","Dot","Pixel","Square"],"description":"Used in SQL Job Graph to represent processed vertex count.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1},
+{"id":4335,"name":"RowUpdating","category":"Combo","product":["VSIDE"],"keywords":["Row","Update","Write","Line","Pencil","Edit"],"description":"Used in SQL Job Graph to represent updated row count.","productversion":"Visual Studio 2017","msdnversion":2017,"publish":1}
