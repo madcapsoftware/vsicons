@@ -1,17 +1,22 @@
 // _sass/_base.scss
 html {
-  *, *:before, *:after {
-    box-sizing: border-box;
+  * {
+    &,
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
   }
 }
+
 body {
   margin: 0;
   padding: 0;
 }
 
 .vsil-wrapper {
-  padding-top: 32px;
   padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .vsil-header {

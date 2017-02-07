@@ -1,28 +1,12 @@
-.vsil-gallery {
-    border-collapse: collapse;
-    width: 100%;
+.vsil-gallery-header {
+  height: 2em;
+}
 
-    td,
-    th {
-        text-align: left;
-    }
+.vsil-gallery-item {
+  border-bottom: 1px solid #000;
+  height: 4em;
 
-    thead {
-        display: table-header-group;
-
-        th {
-            &:not(:first-child) {
-                border-left: 2px solid #fff;
-            }
-        }
-    }
-
-    tbody {
-        tr {
-            border-bottom: 1px solid #000;
-            display: block;
-            padding-top: 8px;
-            padding-bottom: 8px;
-        }
-    }
+  &>div {
+    display: inline-block;
+  }
 }
