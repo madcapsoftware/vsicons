@@ -51,15 +51,20 @@ export default class VsilGallery extends React.Component {
   render() {
     const items = this.state.items;
     let itemsFiltered = items;
+    let count = itemsFiltered.length;
     return (
       <div className="vsil-gallery">
         <SearchBox
           className="vsil-search" onChange={(value) => {
             const query = value.toLowerCase();
-            itemsFiltered = items.filter(item => item.name.toLowerCase().indexOf(query) >= 0);
+            itemsFiltered = items.filter((item) => {
+              const metadata = `${item.name.toLowerCase()} ${item.keywords ? item.keywords.join(' ').toLowerCase() : ''}`;
+              return metadata.indexOf(query) >= 0;
+            });
             this.setState({
               itemsFiltered: itemsFiltered
             });
+            count = itemsFiltered.length;
           }}
         />
         <div className="ms-bgColor-neutralSecondary ms-fontColor-white ms-Grid-row vsil-gallery-header">
@@ -68,7 +73,7 @@ export default class VsilGallery extends React.Component {
           <div className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6"><span>Description</span></div>
         </div>
         <List className="vsil-gallery-body" items={ this.state.itemsFiltered } onRenderCell={ (item, index) => (
-          <div className="ms-Grid-row vsil-gallery-item" id={`Item_${item.id}`} data-keywords={ item.keywords }>
+          <div className="ms-Grid-row vsil-gallery-item" id={`Item_${item.id}`}>
             <div className="ms-Grid-col ms-u-sm9 ms-u-md4 vsil-gallery-item-name"><span>{item.name}</span></div>
             <div className="ms-Grid-col ms-u-sm3 ms-u-md2 vsil-gallery-thumbnail"><span><Image src={`https://vsicons.blob.core.windows.net/assets/DevEnv/${item.name}/${item.name}_16x.svg`} alt={` ${item.name} `} width={32} /></span></div>
             <div className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6 vsil-gallery-item-description"><span>{item.description || ''}</span></div>
@@ -76,7 +81,7 @@ export default class VsilGallery extends React.Component {
         ) }
         />
         <div className="vsil-gallery-footer">
-          <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">Displaying { items.length } Visual Studio icons.</p>
+          <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">Displaying { count } Visual Studio icons.</p>
         </div>
       </div>
     );
