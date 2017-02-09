@@ -9,6 +9,7 @@ export default class VsilGallery extends React.Component {
       items: [],
       filteredItems: [],
       limit: 0,
+      count: 0,
     };
     this.limitResult = (data, amount) => {
       let dataLimited;
@@ -40,7 +41,11 @@ export default class VsilGallery extends React.Component {
             this.state.limit),
           itemsFiltered: this.limitResult(
             this.filterResult(response.data),
-            this.state.limit),
+            this.state.limit)
+        });
+        // update count
+        this.setState({
+          count: this.state.itemsFiltered.length,
         });
       })
       .catch((error) => {
@@ -61,10 +66,11 @@ export default class VsilGallery extends React.Component {
               const metadata = `${item.name.toLowerCase()} ${item.keywords ? item.keywords.join(' ').toLowerCase() : ''}`;
               return metadata.indexOf(query) >= 0;
             });
-            this.setState({
-              itemsFiltered: itemsFiltered
-            });
             count = itemsFiltered.length;
+            this.setState({
+              itemsFiltered: itemsFiltered,
+              count: count,
+            });
           }}
         />
         <div className="ms-bgColor-neutralSecondary ms-fontColor-white ms-Grid-row vsil-gallery-header">
@@ -81,7 +87,7 @@ export default class VsilGallery extends React.Component {
         ) }
         />
         <div className="vsil-gallery-footer">
-          <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">Displaying { count } Visual Studio icons.</p>
+          <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">Displaying { this.state.count } Visual Studio icons.</p>
         </div>
       </div>
     );
