@@ -1,5 +1,3 @@
-'use strict';
-
 // dependencies
 const gulp = require('gulp');
 const del = require('del');
@@ -39,12 +37,12 @@ gulp.task('css', () => {
 
 // compile and bundle jsdfe
 gulp.task('js', ['copy'], () => {
-  const main = browserify('src/_js/main.js')
+  const main = browserify('src/_js/main.jsx')
       .transform('babelify', {
         presets: ['es2015', 'react'],
       })
       .bundle()
-      .pipe(source('main.js'))
+      .pipe(source('main.jsx'))
       .pipe(rename({
         basename: 'main.min',
         extname: '.js',
@@ -82,7 +80,7 @@ gulp.task('watch', ['copy', 'css', 'js', 'cachebust'], () => {
     server: './dist',
   });
   gulp.watch('src/**/*.scss', ['css']).on('change', browserSync.reload);
-  gulp.watch('src/**/*.js', ['js']).on('change', browserSync.reload);
+  gulp.watch('src/**/*.jsx', ['js']).on('change', browserSync.reload);
   gulp.watch('src/**/*.html', ['copy']).on('change', browserSync.reload);
 });
 

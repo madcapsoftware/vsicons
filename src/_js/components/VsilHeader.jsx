@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const VsilHeader = (props) => (
+const VsilHeader = props => (
   <div className="vsil-header">
     <h1>Microsoft Visual Studio Image Library { props.year }</h1>
     <div className="ms-fontColor-themePrimary">
@@ -18,4 +18,11 @@ const VsilHeader = (props) => (
   </div>
 );
 
+VsilHeader.propTypes = {
+  year: React.PropTypes.number.isRequired,
+};
+
+VsilHeader.defaultProps = {
+  year: 2017,
+};
 export default VsilHeader;
