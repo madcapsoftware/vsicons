@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SearchBox, Image, List } from 'office-ui-fabric-react/lib/index';
 import * as axios from 'axios';
+import VsilGalleryItem from './VsilGalleryItem.jsx';
 
 export default class VsilGallery extends React.Component {
   constructor() {
@@ -83,22 +84,7 @@ export default class VsilGallery extends React.Component {
         <List
           className="vsil-gallery-body"
           items={this.state.itemsFiltered}
-          onRenderCell={
-            item => (
-              <div className="ms-Grid-row vsil-gallery-item" id={`Item_${item.id}`}>
-                <div className="ms-Grid-col ms-u-sm9 ms-u-md4 vsil-gallery-item-name">
-                  <span>{item.name}</span>
-                </div>
-                <div className="ms-Grid-col ms-u-sm3 ms-u-md2 vsil-gallery-thumbnail">
-                  <span><Image src={`https://vsicons.blob.core.windows.net/assets/DevEnv/${item.name}/${item.name}_16x.svg`} alt={` ${item.name} `} width={32} /></span>
-                </div>
-                <div
-                  className="ms-Grid-col ms-u-hiddenMdDown ms-u-md6 vsil-gallery-item-description"
-                >
-                  <span>{item.description || ''}</span>
-                </div>
-              </div>
-        )}
+          onRenderCell={ item => (<VsilGalleryItem id={ item.id } name={ item.name } description={ item.description } />) }
         />
         <div className="vsil-gallery-footer">
           <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">
