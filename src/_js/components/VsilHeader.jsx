@@ -12,8 +12,8 @@ const VsilHeader = props => (
        must be used in a manner consistent
        with the image name or concept description indicated below.</p>
       <p className="vsil-show-on-print">Icon image files are sorted in the
-       <strong>{`VS${props.year}`}</strong> folder.
-       Each icon folder name matches the icon concept name you can find in below table.</p>
+        <strong>{`VS${props.year}`}</strong> folder.
+        Each icon folder name matches the icon concept name you can find in below table.</p>
     </div>
   </div>
 );

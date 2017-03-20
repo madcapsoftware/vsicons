@@ -20,37 +20,36 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babelify": "^7.3.0",
-    "browser-sync": "^2.18.8",
-    "browserify": "^14.1.0",
-    "del": "^2.2.2",
-    "eslint": "^3.17.1",
+    "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
-    "gulp": "^3.9.1",
+    "eslint-plugin-react": "^6.10.2",
     "gulp-babel": "^6.1.2",
-    "gulp-clean-css": "^3.0.3",
-    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.1.1",
-    "gulp-pug": "^3.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.1",
     "gutil": "^1.6.4",
-    "hasha": "^2.2.0",
-    "merge-stream": "^1.0.1",
-    "reactify": "^1.1.1",
-    "require-dir": "^0.3.1",
-    "vinyl-source-stream": "^1.1.0"
+    "reactify": "^1.1.1"
   },
   "dependencies": {
     "axios": "^0.15.3",
     "es6-promise": "^4.1.0",
-    "office-ui-fabric-react": "^1.14.1",
+    "office-ui-fabric-react": "^2.5.2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4",
+    "hasha": "^2.2.0",
+    "del": "^2.2.2",
+    "merge-stream": "^1.0.1",
+    "require-dir": "^0.3.1",
+    "browserify": "^14.1.0",
+    "gulp-rename": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-sass": "^3.1.0",
+    "browser-sync": "^2.18.8"
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -65,22 +64,9 @@
     },
     "rules": {
       "linebreak-style": 0,
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ],
-      "extensions": [
-        1,
-        "never",
-        {
-          "jsx": "always"
-        }
-      ]
+      "import/extensions": [1, "never", {
+        "jsx": "always"
+        }]
     }
   }
 }

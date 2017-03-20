@@ -6,6 +6,6 @@ import VsilGallery from './components/VsilGallery.jsx';
 
 promise.polyfill();
 
-ReactDOM.render(<VsilHeader year="2017" />, document.getElementById('VsilHeader'));
+ReactDOM.render(<VsilHeader year={2017} />, document.getElementById('VsilHeader'));
 
 ReactDOM.render(<VsilGallery dataurl="vsicons.json" />, document.getElementById('VsilGallery'));

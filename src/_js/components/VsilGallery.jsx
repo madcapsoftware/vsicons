@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SearchBox, Image, List } from 'office-ui-fabric-react/lib/index';
+import { SearchBox, List } from 'office-ui-fabric-react/lib/index';
 import * as axios from 'axios';
 import VsilGalleryItem from './VsilGalleryItem.jsx';
 
@@ -48,9 +48,6 @@ export default class VsilGallery extends React.Component {
         this.setState({
           count: this.state.itemsFiltered.length,
         });
-      })
-      .catch((error) => {
-        console.log(error);
       });
   }
 
@@ -84,7 +81,9 @@ export default class VsilGallery extends React.Component {
         <List
           className="vsil-gallery-body"
           items={this.state.itemsFiltered}
-          onRenderCell={ item => (<VsilGalleryItem id={ item.id } name={ item.name } description={ item.description } />) }
+          onRenderCell={item => (
+            <VsilGalleryItem id={item.id} name={item.name} description={item.description} />
+          )}
         />
         <div className="vsil-gallery-footer">
           <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">

@@ -1,11 +1,10 @@
 const gulp = require('gulp');
 const browserify = require('browserify');
 const rename = require('gulp-rename');
-const merge = require('merge-stream');
 const source = require('vinyl-source-stream');
 
-gulp.task('scripts', ['copy'], () => {
-  return browserify('src/_js/main.jsx')
+gulp.task('scripts', ['copy'], () => (
+  browserify('src/_js/main.jsx')
       .transform('babelify', {
         presets: ['es2015', 'react'],
       })
@@ -15,5 +14,5 @@ gulp.task('scripts', ['copy'], () => {
         basename: 'main.min',
         extname: '.js',
       }))
-      .pipe(gulp.dest('dist/js'));
-});
+      .pipe(gulp.dest('dist/js'))
+));
