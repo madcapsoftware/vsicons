@@ -11,14 +11,20 @@
 
 .vsil-gallery-item {
   border-bottom: 1px solid #000;
-
   &>div {
     display: table;
     min-height: 3em;
-
     &>span {
       display: table-cell;
       vertical-align: middle;
     }
   }
+}
+
+.vsil-gallery-item-name {
+  word-break: break-all;
+}
+
+.vsil-download-button {
+  position: relative;
 }

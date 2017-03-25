@@ -2,7 +2,7 @@
     display: none;
 }
 @media print {
-     @page {
+     @page{
         size: landscape;
     }
 
@@ -23,5 +23,11 @@
 
     .vsil-show-on-print {
         display: initial;
+    }
+    .vsil-gallery-item-download {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
     }
 }
