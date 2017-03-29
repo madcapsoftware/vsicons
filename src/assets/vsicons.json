@@ -4029,7 +4029,6 @@
 {"id":4046,"name":"WebSubfolder","product":["VSIDE"],"keywords":["Web","Globe"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4047,"name":"WebTest","product":["VSIDE"],"keywords":["Web","Globe","Test","Beaker","Flask"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4048,"name":"WebTestPlugin","product":["VSIDE"],"keywords":["Test","Beaker","Plugin","Mark","Plus","Symbol"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
-{"id":4049,"name":"WebURL","product":["VSIDE"],"keywords":["Web","Globe","URL","Link","Chainlink"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4050,"name":"WebUserControl","product":["VSIDE"],"keywords":["Web","Globe","User","Custom","People","Person","Man"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4051,"name":"WebWarning","category":"Status","product":["VSIDE"],"keywords":["Web","Globe","Warning","Critical","Triangle","Exclaimation","Mark","!"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":4052,"name":"WeightMember","product":["VSIDE"],"keywords":["Member","Weight","Symbol","%","Circle"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
