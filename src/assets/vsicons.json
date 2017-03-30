@@ -1479,7 +1479,6 @@
 {"id":1486,"name":"FeedbackSad","product":["VSIDE",""],"keywords":["Feedback","Face","Negative","Bad","Sad"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1487,"name":"FeedbackSmile","product":["VSIDE",""],"keywords":["Feedback","Face","Positive","Good","Happy","Smile"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1488,"name":"FeedbackTool","category":"Brand","product":["VSIDE"],"keywords":["Annotation","Infinity","Comment","Feedback","Bubble","Visual","Studio"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":0},
-{"id":1489,"name":"FeedbackToolIcon","product":["VSIDE"],"keywords":["User","People","Feedback","Person","Man","Multiple"],"productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1490,"name":"Field","category":"Single","product":["VSIDE","F12"],"keywords":["Field","Brick","IntelliSense"],"description":"Intellisense icon","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1491,"name":"FieldAdded","category":"Combo","product":["VSIDE"],"keywords":["Field","Brick","+","Mark","Plus","IntelliSense"],"description":"Intellisense icon","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
 {"id":1492,"name":"FieldDeleted","category":"Combo","product":["VSIDE"],"keywords":["Field","Brick","Delete","Clear","Cross","Cancle","IntelliSense"],"description":"Intellisense icon","productversion":"Visual Studio 2013","msdnversion":2014,"publish":1},
