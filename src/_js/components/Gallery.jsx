@@ -58,22 +58,28 @@ export default class Gallery extends React.Component {
     return (
       <div className="ms-Grid-col ms-u-sm10 ms-u-smPush1 ms-u-xl8 ms-u-xlPush2">
         <div className="vsil-gallery">
-          <SearchBox
-            className="vsil-search vsil-hide-on-print" onChange={(value) => {
-              const query = value.toLowerCase();
-              itemsFiltered = items.filter((item) => {
-                const metadata = `${item.name.toLowerCase()} ${item.keywords ? item.keywords.join(' ').toLowerCase() : ''}`;
-                return metadata.indexOf(query) >= 0;
-              });
-              count = itemsFiltered.length;
-              this.setState({
-                itemsFiltered,
-                count,
-              });
-            }}
-          />
+          <div className="vsil-search vsil-hide-on-print">
+            <SearchBox
+              onChange={(value) => {
+                const query = value.toLowerCase();
+                itemsFiltered = items.filter((item) => {
+                  const metadata = `${item.name.toLowerCase()} ${item.keywords ? item.keywords.join(' ').toLowerCase() : ''}`;
+                  return metadata.indexOf(query) >= 0;
+                });
+                count = itemsFiltered.length;
+                this.setState({
+                  itemsFiltered,
+                  count,
+                });
+              }}
+            />
+          </div>
           <div
-            className="ms-bgColor-neutralSecondary ms-fontColor-white ms-Grid-row vsil-gallery-header"
+            className="
+            ms-bgColor-neutralSecondary
+            ms-fontColor-white
+            ms-Grid-row
+            vsil-gallery-header"
           >
             <div className="ms-Grid-col ms-u-sm8 ms-u-md4"><span>Name</span></div>
             <div className="ms-Grid-col ms-u-sm4 ms-u-md2"><span>Icon</span></div>
@@ -88,9 +94,15 @@ export default class Gallery extends React.Component {
             onRenderCell={item => (
               <GalleryItem id={item.id} name={item.name} description={item.description} />
             )}
+            renderedWindowsAhead={500}
+            renderedWindowsBehind={500}
           />
-          <div className="vsil-gallery-footer">
-            <p className="ms-fontColor-neutralSecondary ms-u-textAlignRight">Displaying { this.state.count } Visual Studio icons.</p>
+          <div className="vsil-gallery-footer vsil-hide-on-print">
+            <p
+              className="
+              ms-fontColor-neutralSecondary
+              ms-u-textAlignRight"
+            >Displaying { this.state.count } Visual Studio icons.</p>
           </div>
         </div>
       </div>
