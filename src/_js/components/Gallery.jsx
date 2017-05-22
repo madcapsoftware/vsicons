@@ -94,8 +94,6 @@ export default class Gallery extends React.Component {
             onRenderCell={item => (
               <GalleryItem id={item.id} name={item.name} description={item.description} />
             )}
-            renderedWindowsAhead={500}
-            renderedWindowsBehind={500}
           />
           <div className="vsil-gallery-footer vsil-hide-on-print">
             <p
