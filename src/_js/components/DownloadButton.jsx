@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, ContextualMenu, DirectionalHint } from 'office-ui-fabric-react/lib/index';
+import { DefaultButton, ContextualMenu, DirectionalHint } from 'office-ui-fabric-react/lib/index';
 
 export default class DownloadButton extends React.Component {
   constructor() {
@@ -26,7 +26,7 @@ export default class DownloadButton extends React.Component {
   render() {
     return (
       <div className="vsil-download-button">
-        <Button id={`Button_${this.props.id}`} onClick={this.onClick}>Download</Button>
+        <DefaultButton id={`Button_${this.props.id}`} onClick={this.onClick}>Download</DefaultButton>
         { this.state.isContextMenuVisible ? (
           <ContextualMenu
             shouldFocusOnMount={false}
