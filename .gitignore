@@ -41,3 +41,6 @@ dist
 
 # environment variables
 .env
+
+# files for storage account
+storage
