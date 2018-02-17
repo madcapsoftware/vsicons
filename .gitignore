@@ -42,5 +42,5 @@ dist
 # environment variables
 .env
 
-# files for storage account
-storage
+# files to be uploaded to Azure Storage account
+upload
