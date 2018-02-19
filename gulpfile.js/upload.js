@@ -5,9 +5,11 @@ const fs = require('fs');
 const hasha = require('hasha');
 require('dotenv').config();
 
+// Put Azure Storage credential in .env file
 const blobService = azure.createBlobService(process.env.AZURESTORAGE_CONNECTIONSTRING);
-const srcFolder = 'E:/Desktop/temp/test/';
-const globFilter = '!(*color|*grey|*inverse|*cyan|*disable|*noHalo|*nohalo)*.{svg,png,xaml}';
+// Put upload folder path in .env file
+const srcFolder = process.env.UPLOAD_SRCFOLDER;
+const globFilter = '!(*color|*grey|*inverse|*cyan|*disable|*noHalo|*nohalo)*_16x.{svg,png,xaml}';
 const destFolder = '.';
 const container = 'vsideicons';
 const logStream = fs.createWriteStream('upload.log', { flags: 'a' });
