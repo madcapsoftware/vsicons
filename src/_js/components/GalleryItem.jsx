@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Image } from 'office-ui-fabric-react/lib/index';
 import DownloadButton from './DownloadButton.jsx';
 
-const urlPrefix = 'https://vsicons.blob.core.windows.net/vsideicons';
+const urlPrefix = 'files';
 
 const GalleryItem = props => (
   <div className="ms-Grid-row vsil-gallery-item" id={`Item_${props.id}`}>

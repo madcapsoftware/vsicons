@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.icon_x002D_canvas_x002D_transparent{opacity:0;fill:#F6F6F6;}
+	.icon_x002D_vs_x002D_out{fill:#F6F6F6;}
+	.icon_x002D_vs_x002D_bg{fill:#424242;}
+	.icon_x002D_vs_x002D_fg{fill:#F0EFF1;}
+	.icon_x002D_vs_x002D_blue{fill:#1BA1E2;}
+</style>
+<g id="canvas">
+	<path class="icon_x002D_canvas_x002D_transparent" d="M16,16H0V0h16V16z"/>
+</g>
+<g id="outline">
+	<path class="icon_x002D_vs_x002D_out" d="M16,4v8c0,1.658-1.597,3.017-4,3.636V16H0V8c0-1.474,0.811-2.75,2-3.443V4
+		c0-2.28,3.01-4,7-4C12.99,0,16,1.72,16,4z"/>
+</g>
+<g id="iconBg">
+	<path class="icon_x002D_vs_x002D_bg" d="M1,8v7h10V5H4C2.344,5,1,6.343,1,8z M10,14H2V8c0-1.103,0.896-2,2-2h6V14z M4.5,13l0.333-1
+		h2.333L7.5,13H9L7,7H6.5h-1H5l-2,6H4.5z M6,8.5L6.833,11H5.167L6,8.5z"/>
+</g>
+<g id="iconFg">
+	<path class="icon_x002D_vs_x002D_fg" d="M13.997,4c0,0.499-0.734,1.132-1.997,1.552V4H4C3.999,4,3.998,4,3.997,4v0
+		c0-0.815,1.948-2,5-2C12.049,2,13.997,3.185,13.997,4z M6,8.5L5.167,11h1.667L6,8.5z M4,6h6v8H2V8C2,6.897,2.896,6,4,6z M5,7l-2,6
+		h1.5l0.333-1h2.333L7.5,13H9L7,7H6.5h-1H5z"/>
+</g>
+<g id="colorImportance">
+	<path class="icon_x002D_vs_x002D_blue" d="M15,4v8c0,1.11-1.208,2.076-3,2.596V5.552C13.263,5.132,13.997,4.499,13.997,4
+		c0-0.815-1.948-2-5-2c-3.052,0-5,1.185-5,2v0C3.651,4,3.321,4.059,3,4.142V4c0-1.657,2.687-3,6-3C12.314,1,15,2.343,15,4z"/>
+</g>
+</svg>
