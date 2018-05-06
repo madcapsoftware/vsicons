@@ -10,5 +10,7 @@ gulp.task('copy', () => {
       .pipe(gulp.dest('dist'));
   const webconfig = gulp.src('src/Web.config')
       .pipe(gulp.dest('dist'));
-  return merge(json, images, html, webconfig);
+  const files = gulp.src('src/files/*')
+      .pipe(gulp.dest('dist'));
+  return merge(json, images, html, webconfig, files);
 });
