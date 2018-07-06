@@ -6,8 +6,8 @@ const path = require('path');
 require('dotenv').config();
 
 const globFilter = '!(*color|*grey|*inverse|*cyan|*disable|*noHalo|*nohalo)*_16x.{svg,png,xaml}';
-const srcFolder = process.env.UPLOAD_SRCFOLDER;
-const destFolder = 'src/files/';
+const srcFolder = 'src/files/';
+const destFolder = 'dist/files/';
 const logStream = fs.createWriteStream('upload.log', { flags: 'a+' });
 
 gulp.task('upload', () => (
@@ -29,15 +29,13 @@ gulp.task('upload', () => (
               // return the stream if version is different
               if (srcHash !== distHash) {
                 buffer = t.through;
-                logStream.write(`${new Date().toISOString()}\t${fileName} overwritten.\r\n`);
-              } else {
-                logStream.write(`${new Date().toISOString()}\t${fileName} skipped.\r\n`);
+                logStream.write(`${new Date().toISOString()}\tExisting item ${fileName} overwritten.\r\n`);
               }
             });
             // file doesn't exist in 'src/files'
         } else {
           buffer = t.through;
-          logStream.write(`${new Date().toISOString()}\t${fileName} uploaded.\r\n`);
+          logStream.write(`${new Date().toISOString()}\tNew item ${fileName} added.\r\n`);
         }
         return buffer;
       });
