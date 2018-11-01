@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 
 const Header = props => (
   <div
@@ -23,7 +24,7 @@ const Header = props => (
 );
 
 Header.propTypes = {
-  year: React.PropTypes.number.isRequired,
+  year: PropTypes.number.isRequired,
 };
 
 Header.defaultProps = {

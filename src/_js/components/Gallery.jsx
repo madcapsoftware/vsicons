@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { SearchBox, List } from 'office-ui-fabric-react/lib/index';
 import * as axios from 'axios';
 import GalleryItem from './GalleryItem.jsx';
@@ -108,8 +109,8 @@ export default class Gallery extends React.Component {
   }
 }
 Gallery.propTypes = {
-  dataurl: React.PropTypes.string.isRequired,
-  limit: React.PropTypes.number,
+  dataurl: PropTypes.string.isRequired,
+  limit: PropTypes.number,
 };
 
 Gallery.defaultProps = {

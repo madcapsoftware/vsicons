@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Image } from 'office-ui-fabric-react/lib/index';
 import DownloadButton from './DownloadButton.jsx';
 
@@ -55,9 +56,9 @@ const GalleryItem = props => (
 
 
 GalleryItem.propTypes = {
-  id: React.PropTypes.number.isRequired,
-  name: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string,
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string,
 };
 
 GalleryItem.defaultProps = {
