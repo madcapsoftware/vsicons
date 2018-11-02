@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Geometry="F1 M16,16z M0,0z M16,16L0,16 0,0 16,0 16,16z" Brush="{DynamicResource IconTransparent}" />
+      <GeometryDrawing Brush="{DynamicResource IconOutline}" Geometry="F1 M16,16z M0,0z M16,15L12,15 12,16 0,16 0,0 16,0 16,15z" />
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Brush="{DynamicResource IconForeground}" Geometry="F1 M16,16z M0,0z M4,4L2,4 2,4.556C2.591,4.212,3.268,4,4,4z" />
+        <GeometryDrawing Brush="{DynamicResource IconActionGreen}" Geometry="F1 M16,16z M0,0z M5,2L5,1 6,1 6,2 5,2z M4,2L4,1 3,1 3,2 4,2z M8,2L8,1 7,1 7,2 8,2z M2,1L1,1 1,2 2,2 2,1z M12,2L12,1 11,1 11,2 12,2z M10,3L9,3 9,4 10,4 10,3z M2,4L2,3 1,3 1,5.382C1.286,5.054,1.622,4.777,2,4.556L2,4z M4,3L3,3 3,4 4,4 4,3z M10,2L10,1 9,1 9,2 10,2z M8,3L7,3 7,4 8,4 8,3z M6,3L5,3 5,4 6,4 6,3z M14,13L15,13 15,12 14,12 14,13z M13,4L14,4 14,3 13,3 13,4z M5,10L3,13 5,13 6,11.5 7,13 9,13 7,10 9,7 7,7 6,8.5 5,7 3,7 5,10z M14,7L15,7 15,6 14,6 14,7z M14,3L15,3 15,2 14,2 14,3z M13,1L13,2 14,2 14,1 13,1z M15,5L15,4 14,4 14,5 15,5z M14,9L15,9 15,8 14,8 14,9z M4,5L11,5 11,15 1,15 1,8C1,6.343,2.343,5,4,5z M10,6L4,6C2.897,6,2,6.897,2,8L2,14 10,14 10,6z M12,3L11,3 11,4 12,4 12,3z M14,11L15,11 15,10 14,10 14,11z M13,14L14,14 14,13 13,13 13,14z" />
+      </DrawingGroup>
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Brush="{DynamicResource IconForeground}" Geometry="F1 M16,16z M0,0z M14,4L14,13 12,13 12,4 14,4z M4,6L10,6 10,14 2,14 2,8C2,6.897,2.897,6,4,6z M5,7L3,7 5,10 3,13 5,13 6,11.5 7,13 9,13 7,10 9,7 7,7 6,8.5 5,7z" />
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

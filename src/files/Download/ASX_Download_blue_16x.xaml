@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Brush="#FF0081E4" Geometry="F1 M16,16z M0,0z M13.354,9.354L7.5,15.207 1.646,9.354 2.353,8.647 7,13.293 7,1 8,1 8,13.293 12.646,8.647 13.354,9.354z" />
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

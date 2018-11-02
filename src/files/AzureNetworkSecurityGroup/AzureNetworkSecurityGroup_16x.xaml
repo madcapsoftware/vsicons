@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Geometry="F1 M16,16z M0,0z M16,16L0,16 0,0 16,0 16,16z" Brush="{DynamicResource IconTransparent}" />
+      <GeometryDrawing Brush="{DynamicResource IconOutline}" Geometry="F1 M16,16z M0,0z M8.001,16C7.615,16,7.252,15.831,7.004,15.536L6.18,14.4C5.986,14.175,6,13.87,6,13.555L6,7.942C5,7.245 2.621,5.716 2.621,4.5 2.621,2.238 6.605,0 8.061,0 9.477,0 13.409,2.288 13.409,4.5 13.409,5.714 11,7.244 10,7.941L10,9.421C10,9.701 10.034,9.96 9.88,10.176 10.035,10.395 10.182,10.658 10.182,10.929 10.182,11.201 10.127,11.466 9.971,11.684A1.283,1.283,0,0,1,9.995,13.19C10.152,13.411 10.244,13.689 10.238,13.978 10.221,14.331 10.088,14.635 9.859,14.864L9.754,14.961 8.81,15.716A1.294,1.294,0,0,1,8.001,16z" />
+      <GeometryDrawing Brush="{DynamicResource IconBackground}" Geometry="F1 M16,16z M0,0z M7.77,14.893A0.3,0.3,0,0,0,8.188,14.935L9.131,14.18A0.305,0.305,0,0,0,9.243,13.957A0.297,0.297,0,0,0,9.147,13.728L8.575,13.193 9.147,12.658A0.288,0.288,0,0,0,9.243,12.438A0.304,0.304,0,0,0,9.147,12.219L8.573,11.685 9.147,11.149A0.297,0.297,0,0,0,9.147,10.712L8.575,10.176 9.147,9.642A0.298,0.298,0,0,0,9.243,9.422L9.242,7.392C9.652,7.226 12.5,5.262 12.5,4.5 12.5,3.033 9.016,1 8,1 7,1 3.5,2.962 3.5,4.5 3.5,5.262 6.351,7.226 6.759,7.391L6.759,13.569A0.29,0.29,0,0,0,6.828,13.761L7.77,14.893z" />
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Brush="{DynamicResource IconForeground}" Geometry="F1 M16,16z M0,0z M6.75,3.25A1.25,1.25,0,1,1,9.25,3.25A1.25,1.25,0,0,1,6.75,3.25z" />
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Brush="{DynamicResource IconTransparent}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Brush="{DynamicResource IconOutline}" Geometry="F1 M16,16z M0,0z M16,5.625L16.065,5.432C14.1,3.139 11.251,1.823 8.25,1.823 5.067,1.823 2.11,3.272 0.138,5.799L-1.11022302462516E-16,6C-1.11022302462516E-16,6 6.192,13.789 6.344,13.999 6.722,14.521 7.388,14.89 8.17,14.973L8.25,15 8.3,14.984 8.5,15C9.383,15 10.328,13.877 10.954,13 11.308,12.506 16,5.625 16,5.625z" />
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Brush="{DynamicResource IconBackground}">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="1.5" RadiusY="1.5" Center="8.25,12.5" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing Brush="{DynamicResource IconBackground}" Geometry="F1 M16,16z M0,0z M3.738,9.279C4.632,7.699 6.308,6.617 8.249,6.617 10.039,6.617 11.621,7.527 12.557,8.908L13.295,8.068C12.146,6.526 10.315,5.521 8.248,5.521 6.033,5.521 4.085,6.673 2.962,8.407L3.738,9.279z" />
+        <GeometryDrawing Brush="{DynamicResource IconBackground}" Geometry="F1 M16,16z M0,0z M1.602,7.177C3.116,5.147 5.528,3.824 8.25,3.824 10.82,3.824 13.12,4.998 14.643,6.838L15.306,6.083C13.599,4.092 11.072,2.823 8.25,2.823 5.275,2.823 2.628,4.233 0.925,6.414L1.602,7.177z" />
+        <GeometryDrawing Brush="{DynamicResource IconBackground}" Geometry="F1 M16,16z M0,0z M5.465,11.401C5.905,10.29 6.984,9.5 8.25,9.5 9.369,9.5 10.335,10.122 10.85,11.032L11.546,10.24C10.824,9.191 9.618,8.5 8.25,8.5 6.736,8.5 5.431,9.356 4.752,10.6L5.465,11.401z" />
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

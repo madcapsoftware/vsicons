@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M16,16L0,16 0,0 16,0 16,16z" Brush="{DynamicResource IconTransparent}" />
+      </DrawingGroup>
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M10.472,13.431C10.091,12.909 10.207,12.178 10.732,11.798 11.257,11.418 11.991,11.534 12.373,12.057 12.755,12.58 12.638,13.31 12.113,13.69 11.588,14.07 10.854,13.954 10.472,13.431z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.5" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M13.217,10.939C12.6,10.741 12.26,10.082 12.459,9.468 12.658,8.854 13.32,8.516 13.937,8.714 14.554,8.912 14.894,9.571 14.695,10.185 14.496,10.799 13.834,11.137 13.217,10.939z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.4" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M13.955,7.315C13.339,7.518 12.675,7.185 12.471,6.572 12.267,5.959 12.602,5.298 13.218,5.095 13.834,4.892 14.498,5.225 14.702,5.838 14.905,6.451 14.571,7.112 13.955,7.315z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.3" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M12.404,3.955C12.027,4.48 11.293,4.602 10.765,4.226 10.237,3.85 10.115,3.12 10.492,2.595 10.869,2.07 11.603,1.948 12.131,2.324 12.659,2.7 12.781,3.43 12.404,3.955z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.2" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M9.159,2.153C9.166,2.799 8.645,3.327 7.997,3.334 7.349,3.341 6.817,2.822 6.81,2.177 6.803,1.532 7.324,1.003 7.972,0.996 8.62,0.989 9.152,1.507 9.159,2.153z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.1" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Brush="#FF007ACC" Geometry="F1 M16,16z M0,0z M5.471,2.602C5.859,3.119 5.752,3.852 5.232,4.238 4.712,4.624 3.976,4.518 3.588,4 3.2,3.482 3.307,2.75 3.827,2.364 4.347,1.978 5.083,2.085 5.471,2.602z" />
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M2.759,5.13C3.379,5.32 3.727,5.974 3.536,6.591 3.345,7.208 2.688,7.554 2.068,7.364 1.448,7.174 1.1,6.52 1.291,5.903 1.482,5.286 2.139,4.94 2.759,5.13z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.9" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M2.068,8.763C2.681,8.552 3.35,8.877 3.561,9.487 3.772,10.097 3.447,10.763 2.834,10.973 2.221,11.184 1.552,10.859 1.341,10.249 1.129,9.639 1.454,8.973 2.068,8.763z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.8" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M3.663,12.102C4.033,11.572 4.765,11.441 5.298,11.81 5.831,12.179 5.962,12.907 5.592,13.437 5.222,13.967 4.49,14.098 3.957,13.729 3.424,13.36 3.292,12.632 3.663,12.102z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.7" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+        <GeometryDrawing Geometry="F1 M16,16z M0,0z M6.93,13.863C6.915,13.218 7.429,12.682 8.077,12.667 8.726,12.652 9.263,13.163 9.279,13.809 9.295,14.455 8.78,14.99 8.132,15.005 7.483,15.019 6.945,14.508 6.93,13.863z">
+          <GeometryDrawing.Brush>
+            <SolidColorBrush Color="#FF007ACC" Opacity="0.6" />
+          </GeometryDrawing.Brush>
+        </GeometryDrawing>
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Geometry="F1 M16,16z M0,0z M16,16L0,16 0,0 16,0 16,16z" Brush="{DynamicResource IconTransparent}" />
+      <GeometryDrawing Brush="{DynamicResource IconOutline}" Geometry="F1 M16,16z M0,0z M16,7.429L16,10 14,10 14,13.214C14,14.75,12.751,16,11.215,16L7,16C5.941,16 4.95,15.427 4.413,14.503 4.143,14.039 4,13.519 4,13L4,12 5,12 5,8.836C4.679,8.919 4.347,8.979 4,8.979 1.794,8.979 0,7.185 0,4.979 0,3.119 1.277,1.551 3,1.105L3,8.88178419700125E-16 4.57,8.88178419700125E-16 7.571,2.553 6.584,3.342 7.523,2.959 7.856,3.98C7.994,4.4,8.052,4.733,8.035,5.011L8.143,5 13.572,5C14.91,5,16,6.089,16,7.429z" />
+      <GeometryDrawing Brush="{DynamicResource IconBackground}" Geometry="F1 M16,16z M0,0z M13.571,6L8.143,6 7.859,6.029C7.579,7.053,6.898,7.906,6,8.428L6,13 5,13C5,13.366 5.105,13.705 5.277,14 5.624,14.596 6.262,15 7,15L11.215,15C12.201,15,13,14.2,13,13.214L13,9 15,9 15,7.429C15,6.64,14.36,6,13.571,6z M12,13.214C12,13.648,11.648,14,11.215,14L11,14C10.447,14,10,13.553,10,13L7,13 7,8.143C7,7.513,7.513,7,8.143,7L12,7 12,13.214z" />
+      <GeometryDrawing Brush="{DynamicResource IconForeground}" Geometry="F1 M16,16z M0,0z M8.143,7L12,7 12,13.214C12,13.648,11.648,14,11.215,14L11,14C10.447,14,10,13.553,10,13L7,13 7,8.143C7,7.513,7.513,7,8.143,7z" />
+      <DrawingGroup Opacity="1">
+        <GeometryDrawing Brush="{DynamicResource IconActionBlue}" Geometry="F1 M16,16z M0,0z M7,4.979C7,6.636 5.657,7.979 4,7.979 2.343,7.979 1,6.636 1,4.979 1,3.323 2.343,1.979 4,1.979L4,0.829 6,2.53 4,4.13 4,2.98C2.896,2.98 1.85,3.876 1.85,4.98 1.85,6.084 2.895,7.13 4,7.13 5.105,7.13 6,6.084 6,4.98 6,4.818 6.1,4.787 6.063,4.636L6.907,4.292C7.136,4.994,7,5.105,7,4.979z" />
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Geometry="F1 M16,16z M0,0z M16,16L0,16 0,0 16,0 16,16z" Brush="{DynamicResource IconTransparent}" />
+      <GeometryDrawing Brush="{DynamicResource IconOutline}" Geometry="F1 M16,16z M0,0z M16,15L0,15 0,1 16,1 16,15z" />
+      <GeometryDrawing Brush="{DynamicResource IconBackground}" Geometry="F1 M16,16z M0,0z M1,2L1,14 15,14 15,2 1,2z M14,13L2,13 2,5 3,5 3,10 6.592,10C6.798,10.581 7.348,11 8,11 8.828,11 9.5,10.328 9.5,9.5 9.5,8.672 8.828,8 8,8 7.348,8 6.798,8.419 6.592,9L4,9 4,5 12,5 12,9 11.199,9C10.957,7.446 9.621,6.25 8,6.25 6.752,6.25 5.679,6.965 5.134,8L6.012,8C6.47,7.397 7.187,7 8,7 9.379,7 10.5,8.122 10.5,9.5 10.5,10.879 9.379,12 8,12 7.186,12 6.469,11.604 6.013,11L5.134,11C5.679,12.035 6.752,12.75 8,12.75 9.621,12.75 10.957,11.554 11.199,10L13,10 13,5 14,5 14,13z" />
+      <GeometryDrawing Brush="{DynamicResource IconForeground}" Geometry="F1 M16,16z M0,0z M14,5L14,13 2,13 2,5 3,5 3,10 6.592,10C6.798,10.581 7.348,11 8,11 8.828,11 9.5,10.328 9.5,9.5 9.5,8.672 8.828,8 8,8 7.348,8 6.798,8.419 6.592,9L4,9 4,5 12,5 12,9 11.199,9C10.957,7.446 9.621,6.25 8,6.25 6.752,6.25 5.679,6.965 5.134,8L6.012,8C6.47,7.397 7.187,7 8,7 9.379,7 10.5,8.122 10.5,9.5 10.5,10.879 9.379,12 8,12 7.186,12 6.469,11.604 6.013,11L5.134,11C5.679,12.035 6.752,12.75 8,12.75 9.621,12.75 10.957,11.554 11.199,10L13,10 13,5 14,5z" />
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

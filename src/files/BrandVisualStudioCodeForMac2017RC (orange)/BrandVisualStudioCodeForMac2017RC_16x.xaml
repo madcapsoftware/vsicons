@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H15.999999 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,15.999999,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <DrawingGroup Opacity="1" Transform="1,0,0,1,151.16428,-155.02616">
+        <DrawingGroup Opacity="1" Transform="0.99499388,0,0,0.99499388,0.718413,-1.6071093">
+          <GeometryDrawing>
+            <GeometryDrawing.Brush>
+              <LinearGradientBrush StartPoint="-146.61667,157.42134" EndPoint="-146.61667,173.50171" MappingMode="Absolute" SpreadMethod="Pad" Opacity="1">
+                <GradientStop Color="#FF3B393C" Offset="0" />
+                <GradientStop Color="#FF272627" Offset="1" />
+              </LinearGradientBrush>
+            </GeometryDrawing.Brush>
+            <GeometryDrawing.Geometry>
+              <RectangleGeometry RadiusX="1.005" RadiusY="1.005" Rect="-152.6469,157.4213,14.0704,16.0805" />
+            </GeometryDrawing.Geometry>
+          </GeometryDrawing>
+          <DrawingGroup Opacity="0.25" Transform="13.906857,-2.2419304,2.2419304,13.906857,-62.09363,-234.42934">
+            <DrawingGroup.ClipGeometry>
+              <PathGeometry FillRule="Nonzero" Figures="M0,18.985921L19.05,25.4 19.05,21.815206z" />
+            </DrawingGroup.ClipGeometry>
+          </DrawingGroup>
+          <GeometryDrawing>
+            <GeometryDrawing.Brush>
+              <SolidColorBrush Color="#FF191919" Opacity="1" Transform="1.0050313,0,0,1.0050313,-152.64686,157.42134" />
+            </GeometryDrawing.Brush>
+            <GeometryDrawing.Geometry>
+              <PathGeometry FillRule="Nonzero" Transform="1.0050313,0,0,1.0050313,-152.64686,157.42134" Figures="M15.999999,16z M0,0z M0,14L0,15C0,15.553999,0.44600083,16,1,16L13,16C13.553999,16,14,15.553999,14,15L14,14C14,14.553999,13.553999,15,13,15L1,15C0.44600083,15,0,14.553999,0,14z" />
+            </GeometryDrawing.Geometry>
+          </GeometryDrawing>
+          <GeometryDrawing Brush="{DynamicResource IconNotificationWhite}">
+            <GeometryDrawing.Geometry>
+              <PathGeometry FillRule="Nonzero" Transform="1.0050313,0,0,1.0050313,-152.64686,157.42134" Figures="M15.999999,16z M0,0z M1,0C0.44600083,0,0,0.44600083,0,1L0,2C0,1.4460008,0.44600083,1,1,1L13,1C13.553999,1,14,1.4460008,14,2L14,1C14,0.44600083,13.553999,0,13,0L1,0z" />
+            </GeometryDrawing.Geometry>
+          </GeometryDrawing>
+          <GeometryDrawing Brush="#FFDD7530" Geometry="F1 M15.999999,16z M0,0z M-151.64183,169.48172L-136.56636,169.48172 -140.58649,172.49681z" />
+          <GeometryDrawing Brush="#FFEF9960" Geometry="F1 M15.999999,16z M0,0z M-140.58649,158.42637L-140.58649,172.49681 -136.56636,170.48675 -136.56637,160.43643z" />
+          <GeometryDrawing Brush="#FFDD7530" Geometry="F1 M15.999999,16z M0,0z M-144.60661,160.19919L-144.60661,168.71392 -142.59655,167.64958 -142.59658,161.26353z" />
+          <GeometryDrawing Brush="#FFDD7530" Geometry="F1 M15.999999,16z M0,0z M-150.6368,162.10051L-144.60657,168.71392 -142.59651,167.64958 -149.66026,162.0926z" />
+          <GeometryDrawing Brush="#FFDD7530" Geometry="F1 M15.999999,16z M0,0z M-149.63177,166.88576L-142.59655,161.26353 -144.60661,160.19919 -150.61173,166.88649z" />
+        </DrawingGroup>
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>

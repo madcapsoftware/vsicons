@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DrawingImage xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingImage.Drawing>
+    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+      <GeometryDrawing>
+        <GeometryDrawing.Pen>
+          <Pen Brush="#00FFFFFF" Thickness="1" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry Rect="0,0,16,16" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Geometry="F1 M16,16z M0,0z M16,16L0,16 0,0 16,0 16,16z" Brush="{DynamicResource IconTransparent}" />
+      <GeometryDrawing Brush="{DynamicResource IconOutline}" Geometry="F1 M16,16z M0,0z M14.964,11.929L16,14 15,16 8,16C3.582,16 0,12.418 0,8 0,3.582 3.582,0 8,0 12.418,0 16,3.582 16,8 16,9.429 15.621,10.768 14.964,11.929z" />
+      <GeometryDrawing Brush="{DynamicResource IconNotificationRed}" Geometry="F1 M16,16z M0,0z M11.31,3L11.422,3.078 7.5,7 10.5,7 9,10 6,13 5.5,13 7.5,9 4.5,9 7.5,3 11.31,3z M7,14L7.042,13.916C4.188,13.455 2,10.982 2,8 2,4.691 4.691,2 8,2 9.223,2 10.36,2.369 11.31,3L11.5,3 11.422,3.078C12.978,4.163 14,5.963 14,8 14,8.544 13.921,9.068 13.785,9.569L14.407,10.814C14.786,9.952 15,9.002 15,8 15,4.134 11.866,1 8,1 4.134,1 1,4.134 1,8 1,11.693 3.862,14.711 7.487,14.974L7,14z" />
+      <GeometryDrawing Brush="{DynamicResource IconForeground}" Geometry="F1 M16,16z M0,0z M7.042,13.916C4.188,13.455 2,10.982 2,8 2,4.691 4.691,2 8,2 9.223,2 10.36,2.369 11.31,3L7.5,3 4.5,9 7.5,9 5.5,13 6,13 9,10 7.042,13.916z M10.5,7L12.5,7 13.785,9.569C13.921,9.068 14,8.544 14,8 14,5.963 12.978,4.163 11.422,3.078L7.5,7 10.5,7z" />
+      <GeometryDrawing Brush="{DynamicResource IconNotificationYellow}" Geometry="F1 M16,16z M0,0z M11.891,8.016L11.11,8.016 8.094,14.016 8.609,15 14.375,15 14.859,14 11.891,8.016z M12,14L11,14 11,13 12,13 12,14z M12,12L11,12 11,10 12,10 12,12z" />
+      <GeometryDrawing Brush="{DynamicResource IconNotificationBlack}" Geometry="F1 M16,16z M0,0z M12,12L11,12 11,10 12,10 12,12z M12,13L11,13 11,14 12,14 12,13z" />
+    </DrawingGroup>
+  </DrawingImage.Drawing>
+</DrawingImage>
