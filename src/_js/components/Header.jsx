@@ -17,7 +17,8 @@ const Header = props => (
          with the image name or concept description indicated below.</p>
         <p className="vsil-show-on-print">Icon image files are sorted in the <strong>{`VS${props.year}`}</strong> folder.
           Each icon folder name matches the icon concept name you can find in below table.</p>
-          <p><a href="site-files/Visual Studio%202017%20Image%20Library%20EULA.RTF" title="Read Visual Studio Image Library 2017 EULA">Read Visual Studio 2017 Image Library EULA</a></p>
+        <p><a href="site-files/Visual Studio%202017%20Image%20Library%20EULA.RTF" title="Read Visual Studio Image Library 2017 EULA">Read Visual Studio 2017 Image Library EULA</a></p>
+        <p><a href="https://docs.microsoft.com/en-us/visualstudio/extensibility/ux-guidelines/images-and-icons-for-visual-studio?view=vs-2017" title="Images and Icons for Visual Studio documentation">Images and Icons for Visual Studio documentation</a></p>
       </div>
     </div>
   </div>
